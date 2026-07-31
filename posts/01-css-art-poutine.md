@@ -18,7 +18,7 @@ That means you can't cheat it with one clever shape. You have to build an actual
 
 ## Demo
 
-{% embed PASTE_CODEPEN_URL_HERE %}
+{% codepen https://codepen.io/xbill9/pen/WbRLbKq %}
 
 Also running standalone at **[xbill9.github.io/devto-poutine/css-art/](https://xbill9.github.io/devto-poutine/css-art/)**, if you'd rather see it fill a whole window.
 
