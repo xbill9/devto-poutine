@@ -32,12 +32,27 @@ jobs:
           # Pages runs Jekyll by default, which would eat any _underscore paths.
           touch _site/.nojekyll
 
+      # Built from css-art/codepen/pen.* at deploy time so the one-click
+      # CodePen button can never drift from the files it ships.
+      - name: Build the CodePen prefill button
+        run: python3 tools/make-prefill.py _site/new-pen.html
+
       - name: Check the files landed
         run: |
           test -s _site/index.html
           test -s _site/styles.css
           test -s _site/app.js
           test -s _site/css-art/index.html
+          test -s _site/new-pen.html
+          # the prefill payload must be parseable JSON, or the button is a dud
+          python3 - <<'PY'
+          import re, json, pathlib
+          p = pathlib.Path('_site/new-pen.html').read_text()
+          blob = re.search(r'id="payload">(.*?)</script>', p, re.S).group(1)
+          d = json.loads(blob.replace('<\\/script', '</script'))
+          assert d['html'] and d['css'] and d['js'], 'empty panel in prefill payload'
+          print('prefill payload OK:', {k: len(v) for k, v in d.items() if isinstance(v, str)})
+          PY
           echo "--- published tree ---"
           find _site -type f | sort
 

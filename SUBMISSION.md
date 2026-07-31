@@ -16,7 +16,11 @@ Two entries, one subject: **poutine**.
 
 ## 1. Publish the CSS art to CodePen
 
-Create a new pen and paste:
+**One click:** sign in to CodePen, open
+<https://xbill9.github.io/devto-poutine/new-pen.html>, press the button, then
+press **Save** on the Pen that opens. Every panel arrives pre-filled.
+
+By hand, if you'd rather:
 
 | File | Panel |
 |---|---|
@@ -24,10 +28,8 @@ Create a new pen and paste:
 | `css-art/codepen/pen.css` | CSS |
 | `css-art/codepen/pen.js` | JS |
 
-`css-art/index.html` is the identical thing as one standalone file, if you'd
-rather host it yourself.
-
-Then replace `PASTE_CODEPEN_URL_HERE` in post 1.
+Then swap the embed in post 1 (currently pointing at the live artwork) for
+`{% embed <your-pen-url> %}`.
 
 ## 2. Landing page — already live ✅
 

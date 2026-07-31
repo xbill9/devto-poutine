@@ -7,9 +7,20 @@ Two submissions, one subject.
 | **CSS Art: Comfort Food** | `css-art/` — a tray of poutine drawn with no images, no SVG, no canvas |
 | **Perfect Landing: Comfort Food** | `landing/` — *Gravy Boat*, a poutinerie landing page that reuses the artwork as its hero |
 
-**Live:** the landing page is at **<https://xbill9.github.io/devto-poutine/>**
-and the standalone artwork at **<https://xbill9.github.io/devto-poutine/css-art/>**,
-deployed from `main` by `.github/workflows/pages.yml`.
+**Live**, deployed from `main` by `.github/workflows/pages.yml`:
+
+| | |
+|---|---|
+| Landing page | <https://xbill9.github.io/devto-poutine/> |
+| Standalone artwork | <https://xbill9.github.io/devto-poutine/css-art/> |
+| One-click "open in CodePen" | <https://xbill9.github.io/devto-poutine/new-pen.html> |
+
+CodePen has no write API and no API key — the only programmatic route is its
+documented [prefill](https://blog.codepen.io/documentation/prefill/) form, which
+POSTs the code to `codepen.io/pen/define` and lands you on a new Pen with every
+panel filled in. `tools/make-prefill.py` builds that button from
+`css-art/codepen/pen.*` at deploy time, so it can't drift. Sign in to CodePen,
+click the button, hit **Save**.
 
 Finished posts for both categories are in [`posts/`](posts/); the pre-flight
 checklist is [`SUBMISSION.md`](SUBMISSION.md). Licensed MIT.
