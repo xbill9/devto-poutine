@@ -20,6 +20,8 @@ That means you can't cheat it with one clever shape. You have to build an actual
 
 {% embed PASTE_CODEPEN_URL_HERE %}
 
+Also running standalone at **[xbill9.github.io/devto-poutine/css-art/](https://xbill9.github.io/devto-poutine/css-art/)**, if you'd rather see it fill a whole window.
+
 There's one button — **Add more gravy**. It is the only JavaScript in the piece: about twenty lines that replay an animation and drop another curd on the heap. Everything else is CSS.
 
 ## Journey

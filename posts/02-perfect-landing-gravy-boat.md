@@ -20,7 +20,7 @@ I wanted the interactive bit to be something that actually belonged on a restaur
 
 ## Demo
 
-{% embed PASTE_CLOUD_RUN_URL_HERE %}
+{% embed https://xbill9.github.io/devto-poutine/ %}
 
 ## Journey
 

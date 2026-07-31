@@ -7,8 +7,12 @@ Two submissions, one subject.
 | **CSS Art: Comfort Food** | `css-art/` — a tray of poutine drawn with no images, no SVG, no canvas |
 | **Perfect Landing: Comfort Food** | `landing/` — *Gravy Boat*, a poutinerie landing page that reuses the artwork as its hero |
 
-Post drafts for both categories are in [`SUBMISSION.md`](SUBMISSION.md).
-Licensed MIT.
+**Live:** the landing page is at **<https://xbill9.github.io/devto-poutine/>**
+and the standalone artwork at **<https://xbill9.github.io/devto-poutine/css-art/>**,
+deployed from `main` by `.github/workflows/pages.yml`.
+
+Finished posts for both categories are in [`posts/`](posts/); the pre-flight
+checklist is [`SUBMISSION.md`](SUBMISSION.md). Licensed MIT.
 
 ---
 

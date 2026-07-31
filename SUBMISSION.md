@@ -29,21 +29,23 @@ rather host it yourself.
 
 Then replace `PASTE_CODEPEN_URL_HERE` in post 1.
 
-## 2. Deploy the landing page
+## 2. Landing page — already live ✅
 
-Cloud Run is the option the challenge names, but DEV's `{% embed %}` accepts any
-URL — Netlify, Vercel, GitHub Pages and Cloudflare Pages all work, and the site
-is three static files with no build step.
+**https://xbill9.github.io/devto-poutine/**
 
-`landing/` ships a working `Dockerfile` and `nginx.conf`. **nginx listens on
-8080 on purpose**: Cloud Run routes to `$PORT`, and the stock image's port 80
-fails the health check. See `README.md` for the deploy commands.
+Deployed from `main` by `.github/workflows/pages.yml`; every push redeploys it.
+The URL is already filled into post 2, and the standalone art rides along at
+`/css-art/`.
 
-Then replace `PASTE_CLOUD_RUN_URL_HERE` in post 2.
+Cloud Run remains an option if you'd prefer it — `landing/` ships a working
+`Dockerfile` and `nginx.conf` (**nginx listens on 8080 on purpose**: Cloud Run
+routes to `$PORT`, and the stock image's port 80 fails the health check). See
+`README.md`. Swap the URL in post 2 if you switch.
 
 ## 3. Before you hit publish
 
-- [ ] Both embed URLs filled in and loading
+- [x] Landing page embed URL filled in and loading
+- [ ] CodePen embed URL filled in (post 1)
 - [ ] `frontendchallenge` tag present on both posts
 - [ ] Category line (`*This is a submission for…*`) correct on each
 - [ ] Repo link in each post points at the right URL
